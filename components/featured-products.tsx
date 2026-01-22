@@ -5,39 +5,45 @@ import { ExternalLink } from 'lucide-react'
 const products = [
   {
     id: 1,
-    title: "Premium Home Essential",
-    description: "Expertly crafted for daily use with superior quality materials.",
-    image: "/modern-premium-home-product-on-white-background.jpg"
+    title: "Artisan Ceramic Vase",
+    category: "Home Goods",
+    description: "Elegant handcrafted ceramic vase with minimalist design, perfect for modern living spaces.",
+    image: "/ceramic-vase-home-decor-minimalist.jpg"
   },
   {
     id: 2,
-    title: "Smart Living Solution",
-    description: "Innovative design meets practical functionality for modern homes.",
-    image: "/sleek-modern-lifestyle-product-minimalist.jpg"
+    title: "Bamboo Kitchen Organizer",
+    category: "Home Goods",
+    description: "Premium bamboo storage solution to keep your kitchen essentials neat and accessible.",
+    image: "/premium-kitchen-organizer-bamboo.jpg"
   },
   {
     id: 3,
-    title: "Everyday Comfort Product",
-    description: "Designed to bring convenience and reliability to your routine.",
-    image: "/elegant-everyday-product-clean-white-background.jpg"
+    title: "Luxury Throw Blanket",
+    category: "Home Goods",
+    description: "Ultra-soft throw blanket crafted from premium materials for ultimate comfort.",
+    image: "/luxury-throw-blanket-living-room.jpg"
   },
   {
     id: 4,
-    title: "Quality Life Upgrade",
-    description: "Premium materials and thoughtful design for lasting value.",
-    image: "/premium-consumer-product-modern-aesthetic.jpg"
+    title: "Wireless Bluetooth Earbuds",
+    category: "Tech",
+    description: "Crystal-clear audio with active noise cancellation and 24-hour battery life.",
+    image: "/wireless-bluetooth-earbuds-tech.jpg"
   },
   {
     id: 5,
-    title: "Modern Living Essential",
-    description: "Simplicity and elegance combined for everyday excellence.",
-    image: "/modern-home-product-sophisticated-design.jpg"
+    title: "Smart LED Desk Lamp",
+    category: "Tech",
+    description: "Adjustable smart lamp with touch controls and multiple lighting modes for any workspace.",
+    image: "/smart-led-desk-lamp-modern.jpg"
   },
   {
     id: 6,
-    title: "Lifestyle Innovation",
-    description: "Transform your daily experience with intelligent functionality.",
-    image: "/innovative-lifestyle-product-clean-design.jpg"
+    title: "Portable Power Bank",
+    category: "Tech",
+    description: "High-capacity 20,000mAh charger with fast charging for all your devices on the go.",
+    image: "/portable-power-bank-charger.jpg"
   }
 ]
 
@@ -66,14 +72,17 @@ export function FeaturedProducts() {
                   />
                 </div>
               </CardHeader>
-              <CardContent className="p-6 space-y-2">
+              <CardContent className="p-6 space-y-3">
+                <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">
+                  {product.category}
+                </span>
                 <h3 className="text-xl font-semibold">{product.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {product.description}
                 </p>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full group/btn">
+                <Button variant="outline" className="w-full group/btn bg-transparent">
                   View on Amazon
                   <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                 </Button>

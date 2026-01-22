@@ -75,13 +75,17 @@ export function HeroSection() {
             
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="text-base px-8 py-6 h-auto group shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all hover:scale-105">
-                Shop on Amazon
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-base px-8 py-6 h-auto border-2 hover:bg-secondary/80 backdrop-blur-sm transition-all hover:scale-105">
-                View Collection
-              </Button>
+              <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="text-base px-8 py-6 h-auto group shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all hover:scale-105">
+                  Shop on Amazon
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </a>
+              <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="text-base px-8 py-6 h-auto border-2 hover:bg-secondary/80 backdrop-blur-sm transition-all hover:scale-105 bg-transparent">
+                  View Collection
+                </Button>
+              </a>
             </div>
             
             {/* Social proof */}
@@ -127,8 +131,8 @@ export function HeroSection() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-secondary to-secondary/50 backdrop-blur-sm border border-border/50 transform hover:scale-[1.02] transition-transform duration-500">
                 <div className="aspect-[4/5]">
                   <img 
-                    src="/premium-modern-consumer-product-hero-shot-on-clean.jpg"
-                    alt="Featured Product"
+                    src="/hero-wireless-headphones-tech.jpg"
+                    alt="Premium Wireless Headphones"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -147,8 +151,8 @@ export function HeroSection() {
               <div className="absolute -left-8 top-1/4 w-48 rounded-2xl overflow-hidden shadow-xl bg-background/95 backdrop-blur-md border border-border/50 p-4 animate-float hidden lg:block">
                 <div className="aspect-square rounded-xl overflow-hidden mb-3">
                   <img 
-                    src="/modern-consumer-product-lifestyle.jpg"
-                    alt="Product 2"
+                    src="/hero-ceramic-diffuser-home.jpg"
+                    alt="Ceramic Essential Oil Diffuser"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -167,7 +171,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  &quot;Outstanding quality and design. Exactly what I needed!&quot;
+                  "Outstanding quality and design. Exactly what I needed!"
                 </p>
               </div>
             </div>
