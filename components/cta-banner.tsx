@@ -10,14 +10,16 @@ export function CtaBanner() {
             Experience Better Everyday Essentials
           </h2>
           
-          <Button 
-            size="lg" 
-            variant="secondary"
-            className="text-base px-8 py-6 group"
-          >
-            Shop Vaultv on Amazon
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="text-base px-8 py-6 group"
+            >
+              Shop Vaultv on Amazon
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

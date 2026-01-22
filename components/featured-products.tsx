@@ -82,10 +82,12 @@ export function FeaturedProducts() {
                 </p>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full group/btn bg-transparent">
-                  View on Amazon
-                  <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                </Button>
+                <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button variant="outline" className="w-full group/btn bg-transparent">
+                    View on Amazon
+                    <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}

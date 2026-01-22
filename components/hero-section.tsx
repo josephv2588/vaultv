@@ -171,7 +171,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  "Outstanding quality and design. Exactly what I needed!"
+                  &quot;Outstanding quality and design. Exactly what I needed!&quot;
                 </p>
               </div>
             </div>

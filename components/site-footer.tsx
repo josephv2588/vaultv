@@ -47,9 +47,11 @@ export function SiteFooter() {
           {/* Amazon */}
           <div className="space-y-4">
             <h4 className="font-semibold">Shop Our Products</h4>
-            <Button className="w-full md:w-auto">
-              Visit Amazon Storefront
-            </Button>
+            <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="inline-block w-full md:w-auto">
+              <Button className="w-full md:w-auto">
+                Visit Amazon Storefront
+              </Button>
+            </a>
           </div>
         </div>
         
